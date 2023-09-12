@@ -3,6 +3,7 @@ on: push
 
 jobs:
   build:
+    continue-on-error: true #continue executing jobs
     strategy:
       matrix:
         node-version: [12, 14, 16]
